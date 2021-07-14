@@ -1,0 +1,141 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"    
+    android:background="@drawable/pilihanmenusiang"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+   
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"            
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"       
+       android:src="@drawable/background" />    
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="670dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+    
+    <TextView
+        android:id="@+id/makansiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginTop="10dp"
+        android:text="@string/makan_siang"
+        android:layout_alignLeft="@+id/menusiang"
+        android:layout_above="@+id/menusiang"
+        android:textSize="20sp"        
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+     <TextView
+         android:id="@+id/menusiang"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"        
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"   
+         android:layout_marginTop="1dp"
+         android:gravity="left"
+         android:ems="17"
+         android:text="menu siang"                       
+         android:textColor="#150517"
+         android:textSize="15sp" />
+     
+     <TextView
+         android:id="@+id/beratsiang"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_marginTop="1dp"
+         android:layout_centerVertical="true"
+         android:layout_alignBaseline="@+id/menusiang"
+         android:layout_alignBottom="@+id/menusiang"
+         android:layout_alignRight="@+id/textcemilansiang"                 
+         android:text="@string/takaran"
+         android:textColor="#150517"
+         android:textSize="15sp" />
+         
+    <TextView
+        android:id="@+id/textcemilansiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/cemilan_siang"
+        android:layout_alignLeft="@+id/menusiang"
+        android:layout_alignRight="@+id/menusiang"         
+        android:layout_below="@+id/menusiang"          
+        android:gravity="left"
+        android:ems="17" 
+        android:textSize="20sp"
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+     <TextView
+         android:id="@+id/menucemilansiang"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"        
+         android:layout_alignLeft="@+id/textcemilansiang"
+         android:layout_marginTop="1dp"         
+         android:layout_below="@+id/textcemilansiang"
+         android:text="menu camilan siang"
+         android:textColor="#150517"
+         android:textSize="15sp" />     
+         
+     <TextView
+         android:id="@+id/beratcamilansiang"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_marginTop="1dp"
+         android:layout_alignBaseline="@+id/menucemilansiang"
+         android:layout_alignBottom="@+id/menucemilansiang"
+         android:layout_alignLeft="@+id/beratsiang"                
+         android:text="@string/takaran"
+         android:textColor="#150517"
+         android:textSize="15sp" />
+    
+     <ImageView
+         android:id="@+id/btn1"
+         android:layout_width="50dp"
+         android:layout_height="30dp"
+         android:src="@drawable/play"         
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true" />  
+
+     <Button
+         android:id="@+id/btnmalam2"
+         style="@style/menumalam"         
+         android:layout_alignParentBottom="true"
+         android:layout_toLeftOf="@+id/btn1"
+         android:textColor="#F5F5F5"
+         android:textSize="15sp" />
+
+     <Button
+         android:id="@+id/btnpagi2"
+         style="@style/menupagi"         
+         android:layout_alignParentBottom="true"
+         android:layout_toRightOf="@+id/btn1"
+         android:textColor="#F5F5F5"
+         android:textSize="15sp" />
+
+	</RelativeLayout>  
+
+	<Button
+	    android:id="@+id/home2"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:background="@drawable/homebutton"
+	    android:layout_alignParentRight="true"
+	    android:layout_alignTop="@+id/imageView"
+	    android:layout_marginTop="143dp"/>	             
+</RelativeLayout>

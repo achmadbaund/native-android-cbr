@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"    
+    android:background="@drawable/isihalaman"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+   
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"            
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"       
+       android:src="@drawable/background" />    
+    
+<RelativeLayout 
+    android:layout_width="match_parent"
+    android:layout_height="670dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="@dimen/activity_vertical_margin" >    
+
+    <TextView
+        android:id="@+id/txtHasilKalori"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"        
+        android:gravity="left"
+        android:text="textView"
+        android:ems="18"
+        android:textColor="#481B10"
+        android:textSize="17sp" />
+    
+    <ImageView
+         android:id="@+id/btn1"
+         android:layout_width="50dp"
+         android:layout_height="30dp"
+         android:src="@drawable/play"         
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true" />
+        
+    <Button
+         android:id="@+id/back"
+         style="@style/previous"
+       	 android:layout_alignParentBottom="true"
+       	 android:layout_toLeftOf="@+id/btn1"
+         android:textColor="#F5F5F5"
+         android:textSize="15sp" />
+    
+    <Button
+         android:id="@+id/next"
+         style="@style/next"
+       	 android:layout_alignParentBottom="true"
+       	 android:layout_toRightOf="@+id/btn1"
+         android:textColor="#F5F5F5"
+         android:textSize="15sp" />
+	</RelativeLayout>
+</RelativeLayout>

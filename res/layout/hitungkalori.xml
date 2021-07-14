@@ -1,0 +1,204 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"    
+    android:background="@drawable/isihalaman"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+   
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"            
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"       
+       android:src="@drawable/background" />    
+    
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="670dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="@dimen/activity_vertical_margin" >  
+
+
+  <TextView
+        android:id="@+id/label_nama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/input_nama"
+        android:layout_marginTop="10dp"
+        android:text="@string/nama"
+        android:layout_above="@+id/input_nama"
+        android:textSize="15sp"
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+     <EditText
+         android:id="@+id/input_nama"
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:layout_above="@+id/input_tinggi"
+         android:layout_alignLeft="@+id/input_tinggi"
+         android:layout_alignRight="@+id/input_tinggi"
+         android:layout_marginBottom="25dp"
+         android:ems="20"
+         android:hint="@string/nama_hint"
+         android:inputType="textPersonName"
+         android:background="@drawable/input"
+         android:textSize="15sp" >
+
+         <requestFocus />
+     </EditText>
+   
+    <TextView
+        android:id="@+id/label_tinggi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/input_tinggi"
+        android:layout_marginTop="10dp"
+        android:text="@string/tinggi"
+        android:layout_above="@+id/input_tinggi"
+        android:textSize="15sp"
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />   
+    
+    <EditText
+         android:id="@+id/input_tinggi"
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:layout_above="@+id/input_berat"
+         android:layout_alignLeft="@+id/label_berat"
+         android:layout_alignRight="@+id/input_berat"
+         android:layout_marginBottom="25dp"
+         android:ems="20"
+         android:hint="@string/tinggi_hint"
+         android:inputType="number"
+         android:background="@drawable/input"
+         android:textSize="15sp" >
+
+         <requestFocus />
+     </EditText>
+
+     <TextView
+        android:id="@+id/label_berat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/input_berat"
+        android:layout_marginTop="10dp"
+        android:text="@string/berat"
+        android:layout_above="@+id/input_berat"
+        android:textSize="15sp"
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+     <EditText
+         android:id="@+id/input_berat"
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:ems="21"
+         android:hint="@string/berat_hint"
+         android:inputType="number"
+         android:background="@drawable/input"
+         android:textSize="15sp" >
+
+         <requestFocus />
+     </EditText>
+     
+     <TextView
+        android:id="@+id/label_usia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/input_berat"
+        android:layout_marginTop="10dp"
+        android:text="@string/usia"
+        android:layout_below="@+id/input_berat"
+        android:textSize="15sp"
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <EditText
+        android:id="@+id/input_usia"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/label_usia"
+        android:layout_alignRight="@+id/input_berat"
+        android:layout_below="@+id/label_usia"
+        android:ems="20"
+        android:inputType="number"
+        android:background="@drawable/input" 
+        android:textSize="15sp"
+        android:hint="@string/usia_hint">
+
+         <requestFocus />
+     </EditText>
+     
+     <TextView
+        android:id="@+id/label_jenis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/input_usia"
+        android:layout_marginTop="10dp"
+        android:text="@string/jeniskelamin"
+        android:layout_below="@+id/input_usia"
+        android:textSize="15sp"
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" /> 
+          
+     <Spinner
+        android:id="@+id/jenis_kelamin"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/label_jenis"
+        android:layout_alignRight="@+id/input_usia"
+        android:layout_below="@+id/label_jenis"                     
+        android:prompt="@string/pilih_jenis" />
+     
+     <RadioGroup
+         android:id="@+id/gejala"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_alignLeft="@+id/label_jenis"
+         android:layout_below="@+id/jenis_kelamin"
+         android:orientation="vertical"
+         android:textSize="8sp" >
+
+	</RadioGroup>	
+    
+     <ImageView
+         android:id="@+id/btn1"
+         android:layout_width="50dp"
+         android:layout_height="30dp"
+         android:src="@drawable/play"         
+         android:layout_alignParentBottom="true"
+         android:layout_centerHorizontal="true" />  
+              
+     <Button
+         android:id="@+id/kembali"
+         style="@style/previous"         
+         android:layout_alignParentBottom="true"
+         android:layout_toLeftOf="@+id/btn1"
+         android:textColor="#F5F5F5"
+         android:textSize="15sp" />
+
+     <Button
+         android:id="@+id/proses"
+         style="@style/next"         
+         android:layout_alignParentBottom="true"
+         android:layout_toRightOf="@+id/btn1"
+         android:onClick="hitungKalori"
+         android:textColor="#F5F5F5"
+         android:textSize="15sp" />
+
+
+	</RelativeLayout>               
+</RelativeLayout>

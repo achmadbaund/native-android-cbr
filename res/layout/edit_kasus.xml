@@ -1,0 +1,123 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"    
+    android:background="@drawable/rekomendasimenu"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" > 
+    
+       
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"            
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"       
+       android:src="@drawable/background" /> 
+    
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="670dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="@dimen/activity_vertical_margin" >  
+    	
+	<EditText
+        android:id="@+id/inputKode"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:hint="Masukkan Kode Kasus"        
+        android:layout_marginBottom="6dp"
+        android:layout_above="@+id/inputSolusi"
+        android:layout_alignLeft="@+id/inputSolusi"
+        android:layout_alignRight="@+id/inputSolusi"
+        android:inputType="text"
+        android:background="@drawable/input"
+        android:singleLine="true" >
+
+          <requestFocus />
+     </EditText>  
+    	
+	<EditText
+        android:id="@+id/inputSolusi"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:hint="@string/solusi_hint"        
+        android:layout_marginBottom="6dp"
+        android:layout_above="@+id/inputGejala"
+        android:layout_alignLeft="@+id/inputGejala"
+        android:layout_alignRight="@+id/inputGejala"
+        android:inputType="text"
+        android:background="@drawable/input"
+        android:singleLine="true" >
+
+          <requestFocus />
+     </EditText>   
+ 
+     <EditText
+        android:id="@+id/inputGejala"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:hint="@string/gejala_hint"
+        android:layout_marginLeft="6dp"
+        android:layout_marginBottom="6dp"
+    	android:layout_above="@+id/listGejala"
+    	android:layout_alignLeft="@+id/listGejala"    
+    	android:layout_toLeftOf="@+id/but_Search"
+    	android:layout_toRightOf="@+id/but_Search" 
+        android:inputType="text"
+        android:background="@drawable/input"
+        android:singleLine="true" >
+
+          <requestFocus />
+     </EditText>
+
+    <ListView
+        android:id="@+id/listGejala"
+        android:layout_width="380dp"
+        android:layout_height="300dp"
+        android:layout_above="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="38dp"
+        android:layout_weight="0.04"/>
+    
+	
+	<Button
+         android:id="@+id/button1"
+         style="@style/previous"
+       	 android:layout_alignParentBottom="true"
+       	 android:layout_alignParentLeft="true" 
+         android:textColor="#F5F5F5"
+         android:textSize="15sp" />
+    
+    <Button
+        android:id="@+id/proses"
+	   	style="@style/next"	   		   
+       	android:layout_alignParentBottom="true"
+       	android:layout_alignParentRight="true"
+        android:onClick="SimpanKasus"        
+        android:textColor="#F5F5F5" />
+
+    <ImageButton
+        android:id="@+id/but_Search"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_above="@+id/listGejala"
+        android:layout_alignRight="@+id/listGejala"
+        android:adjustViewBounds="true"
+        android:background="@drawable/search"
+        android:contentDescription="@string/search"
+        android:maxHeight="35dp"
+        android:maxWidth="35dp"
+        android:onClick="but_SearchClick" />
+
+    </RelativeLayout>
+    
+</RelativeLayout>

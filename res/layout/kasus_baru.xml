@@ -1,0 +1,106 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"    
+    android:background="@drawable/rekomendasimenu"
+    tools:context=".perhitungan_cbr"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+   
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"            
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"       
+       android:src="@drawable/background" />    
+    
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="670dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="@dimen/activity_vertical_margin" >    
+
+    <TextView
+        android:id="@+id/hasil_cbr2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_alignLeft="@+id/solusi"
+        android:layout_above="@+id/solusi"             
+        android:gravity="left"
+        android:text="textView"        
+        android:textColor="#481B10"
+        android:textSize="17sp" />
+    
+     <TextView
+        android:id="@+id/solusi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"        
+        android:gravity="left"        
+        android:ems="18"
+        android:text="Pilih Menu Diet"        
+        android:textSize="17sp"
+        android:textColor="#481B10"
+        android:layout_marginTop="14dp"
+        android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+    <Spinner
+        android:id="@+id/input_menu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/solusi"
+        android:layout_alignRight="@+id/solusi"
+        android:layout_below="@+id/solusi"             
+        android:entries="@array/sls_mn"
+        android:prompt="@string/pilih_solusi" />
+    
+    <TextView
+        android:id="@+id/olahraga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/solusi"		
+		android:layout_below="@+id/input_menu"       
+        android:gravity="left"        
+        android:text="Pilih Jenis Latihan"        
+        android:textSize="17sp"
+        android:textColor="#481B10"        
+        android:textAppearance="?android:attr/textAppearanceMedium" /> 
+            
+    <Spinner
+        android:id="@+id/input_olahraga"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignLeft="@+id/solusi"
+        android:layout_alignRight="@+id/solusi"
+        android:layout_below="@+id/olahraga"             
+        android:entries="@array/jns_olg"
+        android:prompt="@string/pilih_olahraga" />
+        
+    <Button
+         android:id="@+id/menu2"
+         style="@style/previous"
+       	 android:layout_alignParentBottom="true"
+       	 android:layout_alignParentLeft="true" 
+         android:textColor="#F5F5F5"
+         android:textSize="15sp" />
+    
+    <Button
+         android:id="@+id/rekomendasi2"
+         style="@style/next"
+       	 android:layout_alignParentBottom="true"
+       	 android:layout_alignParentRight="true" 
+         android:textColor="#F5F5F5"
+         android:onClick="SimpanKasus1"
+         android:textSize="15sp" />
+	</RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,272 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"    
+    android:background="@drawable/pilihanmenu"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+   
+   <ImageView
+       android:id="@+id/imageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"            
+       android:layout_centerHorizontal="true"
+       android:layout_centerVertical="true"       
+       android:src="@drawable/background" />    
+    
+<RelativeLayout 
+    android:layout_width="wrap_content"
+    android:layout_height="670dp"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:paddingTop="@dimen/activity_vertical_margin" >
+   
+    <TextView
+        android:id="@+id/textsarapan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/menusarapan"
+        android:layout_marginTop="10dp"
+        android:text="@string/sarapan"
+        android:layout_above="@+id/menusarapan"
+        android:textSize="15sp"
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+   
+   <TextView
+         android:id="@+id/menusarapan"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"        
+         android:layout_alignLeft="@+id/textcemilanpagi"
+         android:layout_marginTop="1dp"
+         android:text="menu sarapan"
+         android:layout_above="@+id/textcemilanpagi"
+         android:textColor="#150517"
+         android:textSize="10sp" />
+   
+    <TextView
+     android:id="@+id/beratsarapan"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_above="@+id/textcemilanpagi"
+     android:layout_alignLeft="@+id/beratcemilanpagi"
+     android:paddingRight="15dip"
+     android:text="@string/takaran"
+     android:textColor="#150517"
+     android:textSize="8sp" />
+    
+    <TextView
+        android:id="@+id/textcemilanpagi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/menucemilanpagi"
+        android:layout_marginTop="10dp"
+        android:text="@string/cemilan_pagi"
+        android:layout_above="@+id/menucemilanpagi"
+        android:textSize="15sp"
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+         android:id="@+id/menucemilanpagi"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"        
+         android:layout_alignLeft="@+id/makansiang"
+         android:layout_marginTop="1dp"
+         android:text="cemilan pagi"
+         android:layout_above="@+id/makansiang"
+         android:textColor="#150517"
+         android:textSize="10sp" />
+    
+    <TextView
+         android:id="@+id/beratcemilanpagi"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_marginTop="1dp"         
+         android:layout_alignBaseline="@+id/menucemilanpagi"
+         android:layout_alignBottom="@+id/menucemilanpagi"
+         android:layout_alignLeft="@+id/beratsiang"                 
+         android:text="@string/takaran"
+         android:textColor="#150517"
+         android:textSize="8sp" />
+    
+    <TextView
+        android:id="@+id/makansiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        
+        android:layout_marginTop="10dp"
+        android:text="@string/makan_siang"
+        android:layout_alignLeft="@+id/menusiang"
+        android:layout_above="@+id/menusiang"
+        android:textSize="15sp"        
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+     <TextView
+         android:id="@+id/menusiang"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"        
+         android:layout_centerHorizontal="true"
+         android:layout_centerVertical="true"
+         android:layout_marginTop="1dp"
+         android:gravity="left"
+         android:text="menu siang"
+         android:ems="28"                 
+         android:textColor="#150517"
+         android:textSize="10sp" />
+     
+     <TextView
+         android:id="@+id/beratsiang"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_marginTop="1dp"
+         android:layout_centerVertical="true"
+         android:layout_alignBaseline="@+id/menusiang"
+         android:layout_alignBottom="@+id/menusiang"
+         android:layout_alignRight="@+id/menusiang"                 
+         android:text="@string/takaran"
+         android:textColor="#150517"
+         android:textSize="8sp" />
+         
+    <TextView
+        android:id="@+id/textcemilansiang"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/menusiang"
+        android:layout_marginTop="10dp"
+        android:text="@string/cemilan_siang"
+        android:layout_below="@+id/menusiang"
+        android:textSize="15sp"
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+     
+     <TextView
+         android:id="@+id/menucemilansiang"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"        
+         android:layout_alignLeft="@+id/textcemilansiang"
+         android:layout_marginTop="1dp"         
+         android:layout_below="@+id/textcemilansiang"
+         android:text="menu camilan siang"
+         android:textColor="#150517"
+         android:textSize="10sp" />     
+         
+     <TextView
+         android:id="@+id/beratcamilansiang"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_marginTop="1dp"
+         android:layout_alignBaseline="@+id/menucemilansiang"
+         android:layout_alignBottom="@+id/menucemilansiang"
+         android:layout_alignLeft="@+id/beratsiang"                
+         android:text="@string/takaran"
+         android:textColor="#150517"
+         android:textSize="8sp" />
+
+    <TextView
+        android:id="@+id/textmalam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/menucemilansiang"
+        android:layout_marginTop="10dp"
+        android:text="@string/makan_malam"
+        android:layout_below="@+id/menucemilansiang"
+        android:textSize="15sp"
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+         android:id="@+id/menumalam"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"        
+         android:layout_alignLeft="@+id/textmalam"
+         android:layout_marginTop="1dp"
+         android:text="menu makan malam"
+         android:layout_below="@+id/textmalam"
+         android:textColor="#150517"
+         android:textSize="10sp" />
+    
+    <TextView
+         android:id="@+id/beratmalam"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_marginTop="1dp"
+         android:layout_alignBaseline="@+id/menumalam"
+         android:layout_alignBottom="@+id/menumalam"
+         android:layout_alignLeft="@+id/beratcamilansiang"                
+         android:text="@string/takaran"
+         android:textColor="#150517"
+         android:textSize="8sp" />
+    
+    <TextView
+        android:id="@+id/textcemilanmalam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/menumalam"
+        android:layout_marginTop="10dp"
+        android:text="@string/Cemilan_malam"
+        android:layout_below="@+id/menumalam"
+        android:textSize="15sp"
+        android:textColor="#481B10"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+    
+    <TextView
+         android:id="@+id/menucemilanmalam"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"        
+         android:layout_alignLeft="@+id/textcemilanmalam"
+         android:layout_marginTop="1dp"
+         android:text="menu cemilan malam"
+         android:layout_below="@+id/textcemilanmalam"
+         android:textColor="#150517"
+         android:textSize="10sp" />	
+         
+    <TextView
+         android:id="@+id/beratcemilanmalam"
+         android:layout_width="wrap_content"
+         android:layout_height="match_parent"
+         android:layout_marginTop="1dp"
+         android:layout_alignBaseline="@+id/menucemilanmalam"
+         android:layout_alignBottom="@+id/menucemilanmalam"
+         android:layout_alignLeft="@+id/beratmalam"                
+         android:text="@string/takaran"
+         android:textColor="#150517"
+         android:textSize="8sp" />
+    
+    <Button
+         android:id="@+id/MenuUtama"
+         style="@style/previous"
+       	 android:layout_alignParentBottom="true"
+       	 android:layout_alignParentLeft="true" 
+         android:textColor="#F5F5F5"
+         android:textSize="15sp" />     
+
+     <Button
+         android:id="@+id/btnRes"
+         style="@style/next"
+       	 android:layout_alignParentBottom="true"
+       	 android:layout_alignParentRight="true" 
+         android:textColor="#F5F5F5"
+         android:textSize="15sp" />
+
+     <TextView
+         android:id="@+id/pesan"
+         android:layout_width="279dp"
+         android:layout_height="30dp"
+         android:layout_above="@+id/textsarapan"
+         android:layout_alignLeft="@+id/textsarapan"
+         android:layout_alignRight="@+id/beratsarapan"      
+        android:gravity="left"
+        android:text="textView"        
+        android:textColor="#481B10"
+        android:textSize="9sp" />
+
+	</RelativeLayout>               
+</RelativeLayout>
