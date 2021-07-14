@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.workshop.menusehatku"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="15"
+        android:targetSdkVersion="18" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"        
+        android:theme="@android:style/Theme.NoTitleBar">
+        <activity
+            android:name="com.workshop.menusehatku.MainActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+         <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.About">
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.Hitungkalori">
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.hasilkalori">
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.Gejala">
+        </activity>
+        <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.tesListView">
+        </activity>  
+        <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.tesListView2">
+        </activity>           
+        <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.Konfirmasi_solusi">
+        </activity>       
+        <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.RekomendasiMakananPagiUmum">
+        </activity>                           
+        <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.RekomendasiMakananSiangUmum">
+        </activity>                
+        <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.RekomendasiMakananMalamUmum">
+        </activity>         
+        <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.PerhitunganCBR">
+        </activity>        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.KasusBaru2">
+        </activity>        
+        <activity
+            android:label="@string/app_name"
+            android:name="com.workshop.menusehatku.Edit_kasus">
+        </activity>        
+ </application>
+
+</manifest>
